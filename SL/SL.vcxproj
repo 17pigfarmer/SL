@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arena.cc" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arena.h" />
+    <ClInclude Include="atomic_pointer.h" />
+    <ClInclude Include="SkipList.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{FBF84187-1703-4020-90B6-CDED5466D3CD}</ProjectGuid>
@@ -119,15 +128,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\SkipList\SkipList\arena.h" />
-    <ClInclude Include="..\..\SkipList\SkipList\atomic_pointer.h" />
-    <ClInclude Include="..\..\SkipList\SkipList\SkipList.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\SkipList\SkipList\arena.cc" />
-    <ClCompile Include="..\..\SkipList\SkipList\main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
